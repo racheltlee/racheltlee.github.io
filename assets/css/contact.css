@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #C9E5FF;
+    height: 100px;
+    width: 100%;
+}
+
+.heading {
+    width: 100%;
+    margin: auto;
+}
+
+
+nav a {
+    float: left;
+    text-decoration: none;
+    width: 20%;
+    text-align: center;
+}
+
+.heading nav {
+    width: 60%;
+    overflow: auto;
+    font-family: 'Chivo', sans-serif;
+    cursor: pointer;
+    font-size: 25px;
+    display: inline-block;
+    padding-top: 35px;
+    padding-right: 50px;
+    padding-left: 40px;
+}
+
+@media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: left; /* If you want the text to be left-aligned on small screens */
+    }
+  }
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
+  }
+
+.loader.one {
+    position: absolute;
+    display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+    width: 100px;
+    left: 50px;
+}
+
+.loader.one .dot {
+	height: 20px;
+	width: 20px;
+	border-radius: 15px;
+	animation-name: dots;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+.loader.two {
+    position: absolute;
+    display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+    width: 100px;
+    right: 50px;
+}
+
+.loader.two .dot {
+	height: 20px;
+	width: 20px;
+	border-radius: 15px;
+	animation-name: dots;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+.first.dot {
+	background: #C9E5FF;
+}
+
+@keyframes dots {
+	0% { transform: translateY(0%); }
+	50% { transform: translateY(100%); }
+	100% {transform: translateY(0%); }
+}
+
+.second.dot {
+	animation-duration: 2s;
+	animation-delay: .25s;
+	animation-iteration-count: infinite;
+	background: #C9E5FF;
+}
+
+.third.dot {
+	animation-duration: 2s;
+	animation-delay: .5s;
+	animation-iteration-count: infinite;
+	background: #C9E5FF;
+}
+
+.dot:hover {
+    animation-play-state: paused;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+    font-family: 'Chivo', sans-serif;
+    font-size: 16px;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    z-index: 1;
+}
+
+input[type=submit] {
+    background-color: #C9E5FF;
+    color: black;
+    font-family: 'Chivo', sans-serif;
+    font-size: 20px;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+input[type=submit]:hover {
+    background-color: #C9E5FF;
+    font-family: 'Chivo', sans-serif;
+    z-index: 1;
+}
+
+/* Style the container/contact section */
+.container {
+    position: relative;
+    width: 60%;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Chivo', sans-serif;
+    z-index: 1;
+    margin: auto;
+}
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+    z-index: 1;
+  }
+}
