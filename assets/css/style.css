@@ -299,7 +299,7 @@ hr {
     left: 0;
 }
 
-img {
+.aboutimg img {
     width: 400px;
     height: 400px;
 }
@@ -375,4 +375,24 @@ img {
     0% {opacity: 0; }
     50% {opacity: .5; }
     100% {opacity: 1; }
+}
+
+/*indonesia*/
+.photo-row {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding: 40px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+section {
+    font-family: 'Chivo', sans-serif;
+    font-family: 20px;
+}
+
+.Indonesia-text {
+    width: 60%;
+    margin: auto;
 }
